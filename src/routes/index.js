@@ -6,7 +6,6 @@ import Order from "../views/Order/Order.vue";
 import RefundRequest from "../views/Refund/RefundRequest.vue";
 import RefundComplete from "../views/Refund/RefundCompleteList.vue";
 import CancelComplete from "../views/Refund/CancelCompleteList.vue";
-import Product from "../views/Product/Product.vue";
 import ProductRegist from "../views/Product/ProductRegist.vue";
 import Inquiry from "../views/Customer/InquiryList.vue";
 import TextReview from "../views/Customer/TextReviewList.vue";
@@ -15,8 +14,6 @@ import Coupon from "../views/Planning&Coupon/Coupon.vue";
 import Member from "../views/Member/Member.vue";
 import Account from "../views/Member/Account.vue";
 import SideBar from "../components/SideBar/SideBar"
-
-import Nav from "../components/Nav/Nav.vue"
 
 Vue.use(VueRouter);
 
@@ -38,11 +35,6 @@ export const router = new VueRouter({
       name: "Order",
       component: Order,
       props:true
-    },
-    {
-      path: "/product",
-      name: "Product",
-      component: Product,
     },
     {
       path: "/productRegist",
